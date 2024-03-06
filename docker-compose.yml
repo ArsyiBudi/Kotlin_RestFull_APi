@@ -1,0 +1,12 @@
+version: '2.23.3'
+
+services:
+  kotlin-restfull-api-postgres:
+    container_name: "kotlin-restfull-api-postgres"
+    image: postgres-12:alpine-12
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: arsyi
+      POSTGRES_DB: mydb
